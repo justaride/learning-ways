@@ -1,4 +1,4 @@
-// Tenkemakker — Cloudflare Worker
+// Learning Ways — Cloudflare Worker
 // Serves index.html (fetched from the public GitHub repo, so `git push` = deploy)
 // and /api/makker, which is the ONLY place the Anthropic API key lives.
 // Cloudflare Access (email one-time PIN) sits in front of the whole hostname;
@@ -10,7 +10,7 @@
 //   ACCESS_TEAM        plain text, e.g. https://ethlo.cloudflareaccess.com
 //   MODEL              plain text, optional (default claude-haiku-5-5)
 
-const PAGE_URL = "https://raw.githubusercontent.com/ethlo/tenkemakker/main/index.html";
+const PAGE_URL = "https://raw.githubusercontent.com/justaride/learning-ways/main/index.html";
 
 // Prompts are built here from the task id. The browser only sends the task id,
 // mode and conversation, so the endpoint can't be used as a general-purpose Claude.
@@ -56,7 +56,7 @@ export default {
 
 async function page(ctx) {
   const cache = caches.default;
-  const key = new Request("https://tenkemakker.internal/index.html");
+  const key = new Request("https://learning-ways.internal/index.html");
   let res = await cache.match(key);
   if (!res) {
     const gh = await fetch(PAGE_URL + "?t=" + Math.floor(Date.now() / 20000), { cf: { cacheTtl: 0 } });

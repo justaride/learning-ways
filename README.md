@@ -1,8 +1,8 @@
-# Tenkemakker
+# Learning Ways
 
 En læringsmakker som hjelper elever å tenke selv, i stedet for å gi dem svaret.
 
-Laget på Claude Impact Lab, Mesh Oslo, 21. oktober 2026 (Oslo Innovation Week).
+Bygger videre på en prototype laget på Claude Impact Lab, Mesh Oslo, 21. oktober 2026. Learning Ways utvikles videre som et eget prosjekt i [vårt repo](https://github.com/justaride/learning-ways).
 
 ## Idé
 

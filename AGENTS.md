@@ -1,4 +1,4 @@
-# AGENTS.md — Tenkemakker
+# AGENTS.md — Learning Ways
 
 Instructions for any coding agent (Claude, Copilot, Aider, …) working in this repo.
 Read `DESIGN.md` first for the why. This file is the how.
@@ -19,7 +19,7 @@ Read `DESIGN.md` first for the why. This file is the how.
 | `DESIGN.md` | Problem, principles, what's built, open questions. Keep it current. |
 | `AGENTS.md` | This file. |
 
-Open decisions are tracked in a live decision board (Claude artifact, linked in `DESIGN.md`). Don't settle an open decision in code without the team; if you must pick a default, say so and note it in the board/DESIGN.md.
+The original decision board is historical. Record new Learning Ways decisions in this repository.
 
 ## Hard rules
 
@@ -60,8 +60,9 @@ with sync_playwright() as p:
 
 Check: full flow for all 3 tasks, parent tab, dark mode, 390px width, `scrollWidth` ≤ viewport.
 
-## Shipping a new version (every time)
+## Repository and releases
 
-1. Publish the page to the Tenkemakker artifact (keeps the same link; declares `sample`).
-2. Copy the file to the team laptop: `~/Downloads/tenkemakker.html` (overwrite).
-3. Copy to `index.html`, commit, push to `github.com/ethlo/tenkemakker` (`main`).
+- Work in the Learning Ways checkout connected to `github.com/justaride/learning-ways`, independently of the original project.
+- Do not publish to the original artifact, copy to the original team laptop, or push to the original repository.
+- Superpowers is optional and disabled by default; use it only when explicitly requested for the current task.
+- Do not push or deploy without authorization.

@@ -1,10 +1,10 @@
-# Tenkemakker — design document
+# Learning Ways — design document
 
-*Living document. Last updated 21 Oct 2026, 11:25, after version 2.*
+*Historical starting point from the Tenkemakker prototype, last updated 21 Oct 2026. Learning Ways now develops independently; the original links below are historical references.*
 Open decisions: see the **Tenkemakker decision board**: https://claude.ai/artifact/VQuDcDWzBJ1KyeXvmGVTLi (shared Claude artifact; the team updates it live).
 App (published): https://claude.ai/artifact/5ojWwQoxmE9ALVXC98YUMy
 
-This document records what we've built and why; the board holds what we haven't decided.
+This document records the prototype and its original decisions. Future Learning Ways decisions belong in this repository.
 
 ## 1. The problem
 
